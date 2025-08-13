@@ -101,3 +101,185 @@ window.addEventListener('scroll', function() {
         }
     }
 });
+
+// FAQ Accordion functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', function() {
+            const isActive = item.classList.contains('active');
+            
+            // Close all FAQ items
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+            });
+            
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    });
+});
+
+// Contact form handling
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            // Validate required fields
+            if (!validateForm(contactForm)) {
+                alert('Kérjük, töltsd ki az összes kötelező mezőt!');
+                return;
+            }
+            
+            // Add loading state
+            addLoadingState(submitBtn);
+            
+            // Simulate form submission (replace with actual form handling)
+            setTimeout(function() {
+                alert('Köszönjük az üzeneted! 24 órán belül válaszolunk.');
+                contactForm.reset();
+                removeLoadingState(submitBtn, originalBtnText);
+            }, 2000);
+        });
+    }
+});
+
+// Enhanced form validation
+function validateForm(form) {
+    let isValid = true;
+    const requiredInputs = form.querySelectorAll('input[required], textarea[required], select[required]');
+    
+    requiredInputs.forEach(input => {
+        const value = input.value.trim();
+        
+        // Remove previous error styling
+        input.classList.remove('error');
+        
+        // Check if field is empty
+        if (!value) {
+            isValid = false;
+            input.classList.add('error');
+            return;
+        }
+        
+        // Email validation
+        if (input.type === 'email') {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(value)) {
+                isValid = false;
+                input.classList.add('error');
+            }
+        }
+        
+        // Phone validation (basic)
+        if (input.type === 'tel' && value) {
+            const phoneRegex = /^[\+]?[\d\s\-\(\)]+$/;
+            if (!phoneRegex.test(value)) {
+                isValid = false;
+                input.classList.add('error');
+            }
+        }
+    });
+    
+    // Check privacy checkbox
+    const privacyCheckbox = form.querySelector('#privacy');
+    if (privacyCheckbox && !privacyCheckbox.checked) {
+        isValid = false;
+        privacyCheckbox.closest('.form-group').classList.add('error');
+    }
+    
+    return isValid;
+}
+
+// Remove error styling on input
+document.addEventListener('DOMContentLoaded', function() {
+    const inputs = document.querySelectorAll('input, textarea, select');
+    
+    inputs.forEach(input => {
+        input.addEventListener('input', function() {
+            this.classList.remove('error');
+            this.closest('.form-group').classList.remove('error');
+        });
+    });
+});
+
+// Smooth scroll for anchor links within the page
+document.addEventListener('DOMContentLoaded', function() {
+    const anchorLinks = document.querySelectorAll('a[href*="#"]');
+    
+    anchorLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            
+            // Check if it's an internal anchor link
+            if (href.startsWith('#') && href.length > 1) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    });
+});
+
+// Add loading animation to buttons
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.btn');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Only add loading state for form submissions and specific actions
+            if (this.type === 'submit' || this.classList.contains('loading-btn')) {
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            }
+        });
+    });
+});
+
+// Auto-resize textareas
+document.addEventListener('DOMContentLoaded', function() {
+    const textareas = document.querySelectorAll('textarea');
+    
+    textareas.forEach(textarea => {
+        textarea.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+    });
+});
+
+// Add focus states for better accessibility
+document.addEventListener('DOMContentLoaded', function() {
+    const focusableElements = document.querySelectorAll('input, textarea, select, button, a');
+    
+    focusableElements.forEach(element => {
+        element.addEventListener('focus', function() {
+            this.setAttribute('data-focused', 'true');
+        });
+        
+        element.addEventListener('blur', function() {
+            this.removeAttribute('data-focused');
+        });
+    });
+});
