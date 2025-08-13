@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat - Okossarok Laptop és Mobilszerviz</title>
+    <meta name="description" content="Vedd fel a kapcsolatot az Okossarok csapatával! Telefon, email, címünk és nyitvatartás. Ingyenes árajánlat!">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-laptop"></i>
+                <span>Okossarok</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Főoldal</a></li>
+                <li><a href="szolgaltatasok.html" class="nav-link">Szolgáltatások</a></li>
+                <li><a href="arlista.html" class="nav-link">Árlista</a></li>
+                <li><a href="rolunk.html" class="nav-link">Rólunk</a></li>
+                <li><a href="gyik.html" class="nav-link">GYIK</a></li>
+                <li><a href="kapcsolat.html" class="nav-link active">Kapcsolat</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Kapcsolat</h1>
+            <p>Vedd fel velünk a kapcsolatot - szívesen segítünk!</p>
+        </div>
+    </section>
+
+    <!-- Contact Main -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <h2>Elérhetőségeink</h2>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Telefon</h3>
+                                <p><a href="tel:+36703269148">+36 70 326 9148</a></p>
+                                <small>Hétfő-Péntek: 9:00-18:00<br>Szombat: 9:00-14:00</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@laptopmobil.hu">info@laptopmobil.hu</a></p>
+                                <small>24 órán belül válaszolunk</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Címünk</h3>
+                                <p>1152 Budapest<br>Késmárk utca 7/b</p>
+                                <small>Főváros XV. kerület</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Nyitvatartás</h3>
+                                <div class="opening-schedule">
+                                    <p>Hétfő-Péntek: 9:00-18:00</p>
+                                    <p>Szombat: 9:00-14:00</p>
+                                    <p>Vasárnap: Zárva</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Írj nekünk!</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Név *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email cím *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="device">Készülék típusa</label>
+                            <select id="device" name="device">
+                                <option value="">Válassz...</option>
+                                <option value="laptop">Laptop</option>
+                                <option value="mobile">Mobiltelefon</option>
+                                <option value="tablet">Tablet</option>
+                                <option value="other">Egyéb</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="problem">Probléma típusa</label>
+                            <select id="problem" name="problem">
+                                <option value="">Válassz...</option>
+                                <option value="screen">Kijelző probléma</option>
+                                <option value="battery">Akkumulátor probléma</option>
+                                <option value="charging">Töltési probléma</option>
+                                <option value="software">Szoftver probléma</option>
+                                <option value="water">Vízbe esett</option>
+                                <option value="data">Adatmentés</option>
+                                <option value="other">Egyéb</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Üzenet *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Írd le részletesen a problémát, vagy mit szeretnél kérdezni..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Elfogadom az <a href="#" target="_blank">adatvédelmi szabályzatot</a> *
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Szeretnék hírlevelet kapni az akciókról és újdonságokról
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Üzenet küldése
+                        </button>
+                    </form>
+
+                    <div class="form-info">
+                        <div class="info-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Adataid biztonságban vannak nálunk</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24 órán belül válaszolunk</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calculator"></i>
+                            <span>Ingyenes árajánlat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map and Location -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Hogyan találsz meg minket?</h2>
+            <div class="map-content">
+                <div class="map-info">
+                    <div class="location-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Pontos címünk</h3>
+                        <p>1152 Budapest, Késmárk utca 7/b</p>
+                        <p>XV. kerület</p>
+                        
+                        <h4><i class="fas fa-car"></i> Megközelítés</h4>
+                        <ul>
+                            <li><strong>Autóval:</strong> Ingyenes parkolás a környéken</li>
+                            <li><strong>Tömegközlekvéssel:</strong> 
+                                <br>- Metró: M3-as vonal, Újpest-Városkapu
+                                <br>- Busz: 20E, 30, 30A, 120, 140
+                            </li>
+                            <li><strong>Kerékpárral:</strong> Kerékpártároló a bejáratnál</li>
+                        </ul>
+                        
+                        <div class="landmark-info">
+                            <h4><i class="fas fa-landmark"></i> Környéken</h4>
+                            <p>Az Újpest Plaza közelében találsz minket. A Késmárk utca egy csendes mellékutca, ahol könnyű a parkolás.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <div class="map-content-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Interaktív térkép</h3>
+                        <p>1152 Budapest, Késmárk utca 7/b</p>
+                        <a href="https://www.google.com/maps/search/1152+Budapest,+K%C3%A9sm%C3%A1rk+utca+7%2Fb" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Megnyitás Google Maps-ben
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact">
+        <div class="container">
+            <div class="emergency-card">
+                <div class="emergency-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="emergency-content">
+                    <h3>Sürgős eset?</h3>
+                    <p>Ha kritikus problémád van (pl. fontos adatok veszélyeztetettek), hívj minket azonnal!</p>
+                    <div class="emergency-buttons">
+                        <a href="tel:+36703269148" class="btn btn-primary">
+                            <i class="fas fa-phone"></i>
+                            Hívás most: +36 70 326 9148
+                        </a>
+                        <span class="emergency-note">Hétköznap 9:00-18:00, szombaton 9:00-14:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Okossarok</h3>
+                    <p>A laptopod és mobilod megbízható partnere Budapesten</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Gyors linkek</h4>
+                    <ul>
+                        <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                        <li><a href="arlista.html">Árlista</a></li>
+                        <li><a href="rolunk.html">Rólunk</a></li>
+                        <li><a href="gyik.html">GYIK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Elérhetőség</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 1152 Budapest, Késmárk utca 7/b</p>
+                        <p><i class="fas fa-phone"></i> +36 70 326 9148</p>
+                        <p><i class="fas fa-envelope"></i> info@laptopmobil.hu</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Nyitvatartás</h4>
+                    <div class="opening-hours">
+                        <p>Hétfő-Péntek: 9:00-18:00</p>
+                        <p>Szombat: 9:00-14:00</p>
+                        <p>Vasárnap: Zárva</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Okossarok. Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
