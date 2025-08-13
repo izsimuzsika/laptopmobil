@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szolgáltatásaink - Okossarok Laptop és Mobilszerviz</title>
-    <meta name="description" content="Teljes körű laptop és mobiltelefon szerviz szolgáltatások: kijelzőcsere, akkumulátorcsere, adatmentés, szoftverjavítás. Gyors és megbízható javítás.">
+    <title>Árlista - Okossarok Laptop és Mobilszerviz</title>
+    <meta name="description" content="Átlátható árak laptop és mobiltelefon javításokra. Kijelzőcsere, akkumulátorcsere, adatmentés árak. Ingyenes árajánlat!">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,18 +16,21 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="logo.svg" alt="Okossarok Logo">
-                <span>Okossarok</span>
+                <a href="index.html"><img src="logo.svg" alt="Okossarok Logo" class="logo-img"></a>
+                <span class="nav-logo-text">Okossarok</span>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link">Főoldal</a></li>
-                <li><a href="szolgaltatasok.html" class="nav-link active">Szolgáltatások</a></li>
-                <li><a href="arlista.html" class="nav-link">Árlista</a></li>
-                <li><a href="https://webshop.laptopmobil.hu" class="nav-link webshop" target="_blank">🛒 Webshop</a></li>
+                <li><a href="szolgaltatasok.html" class="nav-link">Szolgáltatások</a></li>
+                <li><a href="arlista.html" class="nav-link active">Árlista</a></li>
+                <li><a href="webshop.html" class="nav-link webshop-link">Webshop</a></li>
                 <li><a href="rolunk.html" class="nav-link">Rólunk</a></li>
                 <li><a href="gyik.html" class="nav-link">GYIK</a></li>
                 <li><a href="kapcsolat.html" class="nav-link">Kapcsolat</a></li>
             </ul>
+            <a href="https://www.messenger.com/" class="messenger-link" target="_blank" rel="noopener noreferrer">
+                <img src="messenger.png" alt="Messenger" class="messenger-icon">
+            </a>
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -37,255 +39,318 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Szolgáltatásaink</h1>
-            <p>Teljes körű laptop és mobiltelefon szerviz szolgáltatások professzionális háttérrel</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Okossarok - A laptopod és mobilod megbízható partnere</h1>
+            <p>Professzionális javítás és kiegészítők széles választéka.</p>
+            <div class="hero-cta">
+                <a href="#featured-services" class="btn btn-primary">Szolgáltatásaink</a>
+                <a href="webshop.html" class="btn btn-secondary">Webshopunk</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="hero-image.jpg" alt="Laptop és mobiltelefon javítás" class="hero-image">
         </div>
     </section>
 
-    <!-- Services Sections -->
-    <section class="services-detailed">
+    <!-- Featured Services on Homepage -->
+    <section id="featured-services" class="featured-services">
         <div class="container">
-            <!-- Laptop és mobil szerviz -->
-            <div class="service-section">
-                <div class="service-header">
-                    <h2><i class="fas fa-tools"></i> Laptop és mobil szerviz</h2>
+            <h2>Szolgáltatásaink</h2>
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobiltelefon szerviz</h3>
+                    <p>Kijelzőcsere, akkumulátorcsere, szoftveres problémák.</p>
+                    <a href="szolgaltatasok.html#mobil" class="learn-more">Tudj meg többet</a>
                 </div>
-                <div class="services-grid">
-                    <div class="detailed-service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3>Kijelzőcsere</h3>
-                        <p>Repedt, törött vagy csíkos kijelző cseréje professzionális minőségben. Eredeti és utángyártott alkatrészek közül választhatsz.</p>
-                        <ul>
-                            <li>LCD és OLED kijelzők</li>
-                            <li>Érintőképernyő funkció helyreállítása</li>
-                            <li>Gyors javítás - akár 1 órán belül</li>
-                        </ul>
-                    </div>
+                <div class="featured-item">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Laptop szerviz</h3>
+                    <p>Billentyűzet, kijelző, alaplap javítás és tisztítás.</p>
+                    <a href="szolgaltatasok.html#laptop" class="learn-more">Tudj meg többet</a>
+                </div>
+                <div class="featured-item">
+                    <i class="fas fa-star"></i>
+                    <h3>iPhone kijelzőüveg csere</h3>
+                    <p>Költséghatékony megoldás, ha csak az üveg sérült.</p>
+                    <a href="szolgaltatasok.html#iphone-uvegcsere" class="learn-more">Tudj meg többet</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="detailed-service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-battery-half"></i>
-                        </div>
-                        <h3>Akkumulátorcsere</h3>
-                        <p>Rövid üzemidő esetén megbízható, hosszú élettartamú akkumulátor beépítése minden típusú készülékhez.</p>
-                        <ul>
-                            <li>Eredeti kapacitású akkumulátorok</li>
-                            <li>Hosszú élettartam garancia</li>
-                            <li>Környezetbarát hulladékkezelés</li>
-                        </ul>
-                    </div>
+    <!-- Webshop Promotion Section -->
+    <section class="webshop-promo">
+        <div class="container">
+            <h2>Fedezd fel webshopunkat!</h2>
+            <p>Legújabb kiegészítők, alkatrészek és akciós termékek várnak.</p>
+            <a href="webshop.html" class="btn btn-primary">Webshop</a>
+        </div>
+        <!-- Image carousel/slider for featured products would go here -->
+        <div class="featured-products-carousel">
+            <!-- Example product items -->
+            <div class="product-item">
+                <img src="product1.jpg" alt="Termék 1">
+            </div>
+            <div class="product-item">
+                <img src="product2.jpg" alt="Termék 2">
+            </div>
+            <div class="product-item">
+                <img src="product3.jpg" alt="Termék 3">
+            </div>
+            <div class="product-item">
+                <img src="product4.jpg" alt="Termék 4">
+            </div>
+            <div class="product-item">
+                <img src="product5.jpg" alt="Termék 5">
+            </div>
+        </div>
+    </section>
 
-                    <div class="detailed-service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-plug"></i>
-                        </div>
-                        <h3>Töltési hibák javítása</h3>
-                        <p>Csatlakozócsere, alaplapi hibák javítása, töltési problémák megoldása minden típusú eszköznél.</p>
-                        <ul>
-                            <li>Töltőcsatlakozó csere</li>
-                            <li>Alaplapi javítások</li>
-                            <li>Töltési áramkör diagnosztika</li>
-                        </ul>
-                    </div>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Árlista</h1>
+            <p>Átlátható árak, rejtett költségek nélkül - Minden javítás garanciával</p>
+        </div>
+    </section>
 
-                    <div class="detailed-service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-tint"></i>
-                        </div>
-                        <h3>Vízbe esett készülék mentése</h3>
-                        <p>Ultrahangos tisztítás, korrozió eltávolítása, teljes felújítás vízkárok esetén.</p>
-                        <ul>
-                            <li>Gyors beavatkozás</li>
-                            <li>Professzionális szárítás</li>
-                            <li>Alkatrészek cseréje szükség esetén</li>
-                        </ul>
-                    </div>
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <!-- Mobiltelefon szerviz -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <h2><i class="fas fa-mobile-alt"></i> Mobiltelefon szerviz</h2>
+                    <p class="category-subtitle">Külső partnerünkön keresztül</p>
+                    <p class="category-description">Az Okossarok megbízható külső szakmai partner bevonásával vállalja mobiltelefonok teljes körű javítását. Így biztosítjuk, hogy a munkát tapasztalt, professzionális háttérrel rendelkező műhely végezze, miközben mi kényelmesen intézzük az ügyintézést és a logisztikát helyetted.</p>
+                </div>
 
-                    <div class="detailed-service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-cog"></i>
-                        </div>
-                        <h3>Szoftveres hibák javítása</h3>
-                        <p>Rendszerhibák, lefagyások, vírusirtás, teljesítményoptimalizálás minden platformon.</p>
-                        <ul>
-                            <li>Vírus- és malware eltávolítás</li>
-                            <li>Rendszer újratelepítés</li>
-                            <li>Teljesítmény optimalizálás</li>
-                        </ul>
-                    </div>
+                <div class="pricing-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Szolgáltatás</th>
+                                <th>Készüléktípus</th>
+                                <th>Ár (bruttó)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fas fa-mobile-alt"></i> Kijelzőcsere</td>
+                                <td>iPhone, Samsung, Huawei, Xiaomi</td>
+                                <td><strong>25 000 Ft-tól</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-battery-half"></i> Akkumulátorcsere</td>
+                                <td>iPhone, Samsung, Huawei, Xiaomi</td>
+                                <td><strong>15 000 Ft-tól</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-plug"></i> Töltőcsatlakozó csere</td>
+                                <td>Minden típus</td>
+                                <td><strong>12 000 Ft-tól</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-shield-alt"></i> Hátlapcsere</td>
+                                <td>Üveg/fém hátlap</td>
+                                <td><strong>15 000 Ft-tól</strong></td>
+                            </tr>
+                            <tr class="featured-row">
+                                <td><i class="fas fa-star"></i> iPhone kijelzőüveg csere</td>
+                                <td>Kijelző ép, csak az üveg sérült</td>
+                                <td><strong>24 000 Ft-tól</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-cog"></i> Szoftverfrissítés, adatmentés</td>
+                                <td>Android / iOS</td>
+                                <td><strong>8 000 Ft-tól</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                    <div class="detailed-service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-search"></i>
+                <!-- Kiemelt iPhone szolgáltatás -->
+                <div class="featured-service-box">
+                    <div class="featured-content">
+                        <div class="featured-text">
+                            <h3>Kiemelt mobilos szolgáltatás – iPhone kijelzőüveg csere</h3>
+                            <p>Külső, megbízható partnerünk révén lehetőség van iPhone kijelzőüveg cserére, így nem kell kicserélni a teljes kijelzőmodult. Ez költséghatékony és minőségmegőrző megoldás, hiszen az eredeti Apple kijelző marad a készülékben.</p>
                         </div>
-                        <h3>Teljes körű diagnosztika</h3>
-                        <p>A hibák pontos feltárása és megoldása professzionális eszközökkel és tapasztalattal.</p>
-                        <ul>
-                            <li>Hardver diagnosztika</li>
-                            <li>Szoftver elemzés</li>
-                            <li>Részletes hibajelentés</li>
-                        </ul>
+                        <div class="featured-image">
+                            <img src="torot_es_nemtorott_telefon.png" alt="Törött és javított iPhone kijelző" loading="lazy">
+                        </div>
                     </div>
+                    <div class="featured-content-details">
+                        <div class="benefits-list">
+                            <div class="benefit">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>Akár 30–50%-kal olcsóbb, mint a teljes kijelzőcsere</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-palette"></i>
+                                <span>Megőrzi a gyári színeket és fényerőt</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-leaf"></i>
+                                <span>Környezetbarát javítás, kevesebb hulladékkal</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-tools"></i>
+                                <span>Professzionális ragasztástechnológia</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-clock"></i>
+                                <span>Gyors átfutás, általában 1–2 munkanap</span>
+                            </div>
+                        </div>
+                        <div class="warning-note">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Az üvegcserés javítás csak akkor végezhető, ha a kijelző képe és érintése hibátlan.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Laptop szerviz -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <h2><i class="fas fa-laptop"></i> Laptop szerviz</h2>
+                    <p class="category-subtitle">Saját műhelyünkben</p>
+                    <p class="category-description">Az Okossarok laptop szerviz Budapesten, a 1152, Késmárk utca 7/b szám alatt saját műhelyben, közvetlenül végzi a javításokat. Tapasztalt szakembereink hardveres és szoftveres hibák javítását egyaránt vállalják, rövid határidővel és garanciával.</p>
+                </div>
+
+                <div class="pricing-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Szolgáltatás</th>
+                                <th>Ár (bruttó)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fas fa-desktop"></i> Kijelzőcsere</td>
+                                <td><strong>45 000 Ft-tól</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-battery-full"></i> Akkumulátorcsere</td>
+                                <td><strong>28 000 Ft-tól</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-keyboard"></i> Billentyűzet csere</td>
+                                <td><strong>20 000 Ft-tól</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-plug"></i> Töltőcsatlakozó javítás</td>
+                                <td><strong>20 000 Ft-tól</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-fan"></i> Hűtés tisztítás, pasztázás</td>
+                                <td><strong>16 000 Ft</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-download"></i> Rendszertelepítés (Windows/Linux/macOS)</td>
+                                <td><strong>20 000 Ft</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-save"></i> Adatmentés (működő eszközről)</td>
+                                <td><strong>10 000 Ft-tól</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-exclamation-triangle"></i> Adatmentés (meghibásodott eszközről)</td>
+                                <td><strong>Egyedi árajánlat</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span>A licenszkulcs vásárlásában segítséget nyújtunk.</span>
                 </div>
             </div>
 
             <!-- Adatmentés és rendszerbeállítás -->
-            <div class="service-section">
-                <div class="service-header">
+            <div class="pricing-category">
+                <div class="category-header">
                     <h2><i class="fas fa-database"></i> Adatmentés és rendszerbeállítás</h2>
                 </div>
-                <div class="services-grid">
-                    <div class="detailed-service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-save"></i>
-                        </div>
-                        <h3>Adatmentés</h3>
-                        <p>Fotók, videók, dokumentumok biztonságos mentése működő és meghibásodott eszközökről egyaránt.</p>
-                        <ul>
-                            <li>Teljes adatmentés</li>
-                            <li>Szelektív fájlmentés</li>
-                            <li>Biztonságos adattárolás</li>
-                        </ul>
-                    </div>
 
-                    <div class="detailed-service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-exchange-alt"></i>
-                        </div>
-                        <h3>Adatátköltöztetés</h3>
-                        <p>Régi eszközről újra történő adatátvitel, teljes beállításokkal együtt, zökkenőmentesen.</p>
-                        <ul>
-                            <li>Kontaktok, üzenetek átvitele</li>
-                            <li>Alkalmazások beállításai</li>
-                            <li>Személyes fájlok migrálása</li>
-                        </ul>
-                    </div>
-
-                    <div class="detailed-service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-desktop"></i>
-                        </div>
-                        <h3>Operációs rendszer telepítés</h3>
-                        <p>Windows, macOS, Android, iOS rendszerek telepítése és beállítása szakszerűen.</p>
-                        <ul>
-                            <li>Eredeti licencek</li>
-                            <li>Driverek telepítése</li>
-                            <li>Alapvető programok beállítása</li>
-                        </ul>
-                    </div>
-
-                    <div class="detailed-service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-download"></i>
-                        </div>
-                        <h3>Frissítések telepítése</h3>
-                        <p>Biztonsági és funkcionális frissítések telepítése, rendszeroptimalizálás.</p>
-                        <ul>
-                            <li>Automatikus frissítések beállítása</li>
-                            <li>Biztonsági patch-ek</li>
-                            <li>Funkcionális újdonságok</li>
-                        </ul>
-                    </div>
-
-                    <div class="detailed-service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Vírusirtás és optimalizálás</h3>
-                        <p>Gyorsabb és stabilabb működés érdekében teljes rendszertisztítás és optimalizálás.</p>
-                        <ul>
-                            <li>Teljes vírusszűrés</li>
-                            <li>Registry tisztítás</li>
-                            <li>Indítás optimalizálás</li>
-                        </ul>
-                    </div>
+                <div class="pricing-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Szolgáltatás</th>
+                                <th>Ár (bruttó)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fas fa-exchange-alt"></i> Adatok átköltöztetése új eszközre</td>
+                                <td><strong>9 000 Ft</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-images"></i> Fotók, videók mentése</td>
+                                <td><strong>7 000 Ft-tól</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-cogs"></i> Teljes rendszerbeállítás</td>
+                                <td><strong>7 000 Ft</strong></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-shield-virus"></i> Vírusirtás és optimalizálás</td>
+                                <td><strong>7 000 Ft</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- iPhone kijelzőüveg csere -->
-            <div class="service-section featured-service">
-                <div class="service-header">
-                    <h2><i class="fas fa-mobile"></i> iPhone kijelzőüveg csere - Kiemelt szolgáltatás</h2>
+    <!-- Pricing Info -->
+    <section class="pricing-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Ingyenes árajánlat</h3>
+                    <p>Minden esetben ingyenes árajánlatot készítünk a javítás megkezdése előtt</p>
                 </div>
-                <div class="featured-content">
-                    <div class="featured-text">
-                        <h3>Gazdaságos és profi megoldás</h3>
-                        <p>Külső, megbízható partnerünknek köszönhetően most már kijelzőüveg cserét is vállalunk iPhone készülékeknél, így nem szükséges a teljes kijelzőmodult kicserélni.</p>
-                        <p>Ez a megoldás jelentős költségmegtakarítást jelent, miközben a telefonod eredeti kijelzője és gyári színei megmaradnak.</p>
-                        
-                        <div class="benefits-grid">
-                            <div class="benefit-item">
-                                <i class="fas fa-euro-sign"></i>
-                                <span>30-50%-kal kedvezőbb ár</span>
-                            </div>
-                            <div class="benefit-item">
-                                <i class="fas fa-palette"></i>
-                                <span>Gyári színek megőrzése</span>
-                            </div>
-                            <div class="benefit-item">
-                                <i class="fas fa-leaf"></i>
-                                <span>Környezetbarát megoldás</span>
-                            </div>
-                            <div class="benefit-item">
-                                <i class="fas fa-tools"></i>
-                                <span>Professzionális technológia</span>
-                            </div>
-                            <div class="benefit-item">
-                                <i class="fas fa-clock"></i>
-                                <span>1-2 munkanap</span>
-                            </div>
-                        </div>
-                        
-                        <div class="warning-box">
-                            <i class="fas fa-exclamation-triangle"></i>
-                            <p><strong>Fontos:</strong> Ez a szolgáltatás kizárólag iPhone készülékeknél elérhető, és csak akkor alkalmazható, ha a kijelző érintésfunkciója és képe sértetlen.</p>
-                        </div>
-                    </div>
-                    <div class="featured-image">
-                        <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=500&h=400&fit=crop&crop=center" alt="iPhone kijelzőüveg csere" loading="lazy">
-                    </div>
+                <div class="info-card">
+                    <i class="fas fa-shield-check"></i>
+                    <h3>Garancia</h3>
+                    <p>Minden munkánkra és beépített alkatrészre garanciát vállalunk</p>
                 </div>
-            </div>
-
-            <!-- Webshop -->
-            <div class="service-section">
-                <div class="service-header">
-                    <h2><i class="fas fa-shopping-cart"></i> Webshop</h2>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Gyors javítás</h3>
+                    <p>Sok javítás akár 1 órán belül elvégezhető</p>
                 </div>
-                <div class="webshop-content">
-                    <div class="webshop-text">
-                        <h3>Új és használt készülékek</h3>
-                        <p>A laptopmobil.hu webshopban széles választékból válogathatod össze a számodra megfelelő eszközt:</p>
-                        <ul>
-                            <li>Új és használt laptopok</li>
-                            <li>Mobiltelefonok minden kategóriában</li>
-                            <li>Tabletek és kiegészítők</li>
-                            <li>Gyors országos kiszállítás</li>
-                            <li>Garancia minden termékre</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary">Webshop megtekintése</a>
-                    </div>
-                    <div class="webshop-image">
-                        <img src="telefon_es_laptop.png" alt="Laptop és mobil webshop" loading="lazy">
-                    </div>
+                <div class="info-card">
+                    <i class="fas fa-euro-sign"></i>
+                    <h3>Korrekt árak</h3>
+                    <p>Átlátható árazás, rejtett költségek nélkül</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="service-cta">
+    <section class="pricing-cta">
         <div class="container">
-            <h2>Kérdésed van a szolgáltatásainkkal kapcsolatban?</h2>
-            <p>Vedd fel velünk a kapcsolatot, és szakembereink segítenek megtalálni a legjobb megoldást!</p>
+            <h2>Szeretnél árajánlatot kérni?</h2>
+            <p>Vedd fel velünk a kapcsolatot, és részletes árajánlatot készítünk számodra!</p>
             <div class="cta-buttons">
-                <a href="kapcsolat.html" class="btn btn-primary">Kapcsolatfelvétel</a>
-                <a href="arlista.html" class="btn btn-secondary">Árlista megtekintése</a>
+                <a href="kapcsolat.html" class="btn btn-primary">Árajánlat kérése</a>
+                <a href="tel:+36703269148" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i>
+                    Hívj most: +36 70 326 9148
+                </a>
             </div>
         </div>
     </section>
@@ -334,11 +399,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Messenger Float Button -->
-    <a href="https://messenger.com" target="_blank" class="messenger-float">
-        <img src="messenger.png" alt="Messenger">
-    </a>
 
     <script src="script.js"></script>
 </body>
