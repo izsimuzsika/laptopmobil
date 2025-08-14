@@ -332,24 +332,25 @@ body {
     line-height: 1.6;
 }
 
-/* Clickable webshop feature item */
-.feature-item.webshop-clickable {
+/* Clickable cart icon only */
+.cart-icon-link {
     text-decoration: none;
-    color: inherit;
-    display: block;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 
-.feature-item.webshop-clickable:hover {
-    text-decoration: none;
-    color: inherit;
+.cart-icon-link:hover {
+    transform: scale(1.1);
 }
 
-.feature-item.webshop-clickable h3 {
-    color: #1e293b;
+.cart-icon-link i {
+    font-size: 3rem;
+    color: #2563eb;
+    transition: all 0.3s ease;
 }
 
-.feature-item.webshop-clickable p {
-    color: #64748b;
+.cart-icon-link:hover i {
+    color: #1d4ed8;
 }
 
 /* iPhone kijelzőüveg csere előnézet */
