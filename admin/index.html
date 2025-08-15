@@ -3,22 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin panel - Visual editor</title>
-<!-- Include CKEditor from CDN -->
+<title>Admin panel – Oldal szerkesztés</title>
 <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
 <style>
 body { font-family: Arial, sans-serif; margin: 20px; }
-h1 { color: #333; }
+label, select, button, input { margin: 5px 0; }
+#editorContainer { display: none; }
 </style>
 </head>
 <body>
-<h1>Oldal tartalom szerkesztő</h1>
-<p>Az alábbi mezőben vizuálisan szerkesztheted az oldal tartalmát. A módosított HTML-t másold ki és illeszd be a megfelelő fájlba a GitHub repositoryban.</p>
-<textarea name="editor1" id="editor1" rows="20" cols="80">
-<!-- Kezdheted a szerkesztést itt -->
-</textarea>
+<h1>Admin felület</h1>
+
+<div id="loginForm">
+  <p>A szerkesztő használatához jelentkezz be.</p>
+  <label for="username">Felhasználónév:</label>
+  <input type="text" id="username"><br>
+  <label for="password">Jelszó:</label>
+  <input type="password" id="password"><br>
+  <button id="loginButton">Bejelentkezés</button>
+</div>
+
+<div id="editorContainer">
+  <h2>Oldalak szerkesztése vizuálisan</h2>
+  <label for="fileSelect">Válassz szerkesztendő fájlt:</label>
+  <select id="fileSelect">
+    <option value="">Válassz egy oldalt...</option>
+    <option value="index.html">Főoldal (index.html)</option>
+    <option value="arlista.html">Árlista (arlista.html)</option>
+    <option value="gyik.html">GYIK (gyik.html)</option>
+    <option value="kapcsolat.html">Kapcsolat (kapcsolat.html)</option>
+    <option value="rolunk.html">Rólunk (rolunk.html)</option>
+    <option value="szolgaltatasok.html">Szolgáltatások (szolgaltatasok.html)</option>
+  </select>
+  <button id="loadButton">Oldal betöltése</button>
+  <p>A szerkesztett tartalom elmentéséhez használd a „Mentés” gombot. A módosítás automatikusan a GitHub‑ra kerül, ha az API konfigurálva van.</p>
+  <textarea name="editor1" id="editor1" rows="20" cols="80"></textarea><br>
+  <button id="saveButton">Mentés</button>
+</div>
+
 <script>
-  CKEDITOR.replace('editor1');
+  function initEditor() {
+    if (CKEDITOR.instances.editor1) return;
+    CKEDITOR.replace('editor1');
+
+    document.getElementById('loadButton').addEventListener('click', function() {
+      var file = document.getElementById('fileSelect').value;
+      if (!file) {
+        alert('Válassz ki egy fájlt!');
+        return;
+      }
+      fetch('/' + file)
+        .then(function(res) {
+          if (!res.ok) {
+            alert('Hiba a fájl betöltésekor: ' + res.status);
+            return '';
+          }
+          return res.text();
+        })
+        .then(function(text) {
+          CKEDITOR.instances.editor1.setData(text);
+        })
+        .catch(function(err) {
+          alert('Hiba történt: ' + err);
+        });
+    });
+
+    document.getElementById('saveButton').addEventListener('click', function() {
+      var file = document.getElementById('fileSelect').value;
+      if (!file) {
+        alert('Előbb válassz ki egy fájlt!');
+        return;
+      }
+      var data = CKEDITOR.instances.editor1.getData();
+      fetch('/api/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ file: file, content: data })
+      })
+      .then(function(res) { return res.json(); })
+      .then(function(json) {
+        if (json.ok) {
+          alert('Az oldal sikeresen frissítve.');
+        } else {
+          alert('Hiba a mentés során: ' + (json.error || JSON.stringify(json)));
+        }
+      })
+      .catch(function(err) {
+        alert('Hiba a mentés során: ' + err);
+      });
+    });
+  }
+
+  document.getElementById('loginButton').addEventListener('click', function() {
+    var u = document.getElementById('username').value;
+    var p = document.getElementById('password').value;
+    if (u === 'Admin' && p === 'Admin_okossarok_2025!') {
+      document.getElementById('loginForm').style.display = 'none';
+      document.getElementById('editorContainer').style.display = 'block';
+      initEditor();
+    } else {
+      alert('Hibás felhasználónév vagy jelszó.');
+    }
+  });
 </script>
 </body>
 </html>
