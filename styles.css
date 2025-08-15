@@ -155,8 +155,16 @@ body {
     color: #1e293b;
 }
 
-.title-highlight {
+.title-main {
+    font-size: 5rem;
     color: #2563eb;
+    display: block;
+}
+
+.title-subtitle {
+    font-size: 2.2rem;
+    color: #1e293b;
+    font-weight: 600;
     display: block;
 }
 
@@ -2509,6 +2517,14 @@ body {
         font-size: 2.8rem;
     }
 
+    .title-main {
+        font-size: 3.5rem;
+    }
+
+    .title-subtitle {
+        font-size: 1.8rem;
+    }
+
     .hero-subtitle {
         font-size: 1.1rem;
     }
@@ -2566,6 +2582,14 @@ body {
 
     .hero-title {
         font-size: 2rem;
+    }
+
+    .title-main {
+        font-size: 2.8rem;
+    }
+
+    .title-subtitle {
+        font-size: 1.4rem;
     }
 
     .hero-subtitle {
