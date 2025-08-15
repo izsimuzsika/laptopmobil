@@ -170,7 +170,7 @@ body {
 }
 
 .hero-text {
-    text-align: center;
+    text-align: left;
     max-width: 800px;
 }
 
@@ -192,7 +192,7 @@ body {
 .hero-buttons {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-start;
     animation: slideInUp 1s ease 0.4s both;
 }
 
