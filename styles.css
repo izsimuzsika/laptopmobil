@@ -171,7 +171,15 @@ body {
     display: flex;
     gap: 30px;
     margin-bottom: 50px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    .hero-features {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .feature-item {
