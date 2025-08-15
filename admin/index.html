@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin panel - Visual editor</title>
+<!-- Include CKEditor from CDN -->
+<script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+h1 { color: #333; }
+</style>
+</head>
+<body>
+<h1>Oldal tartalom szerkesztő</h1>
+<p>Az alábbi mezőben vizuálisan szerkesztheted az oldal tartalmát. A módosított HTML-t másold ki és illeszd be a megfelelő fájlba a GitHub repositoryban.</p>
+<textarea name="editor1" id="editor1" rows="20" cols="80">
+<!-- Kezdheted a szerkesztést itt -->
+</textarea>
+<script>
+  CKEDITOR.replace('editor1');
+</script>
+</body>
+</html>
