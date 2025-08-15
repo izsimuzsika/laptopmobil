@@ -691,9 +691,22 @@ body {
     color: #2563eb;
 }
 
+.contact-info {
+    display: block;
+}
+
 .contact-info p {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     word-break: break-word;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-info p i {
+    color: #2563eb;
+    min-width: 16px;
+    flex-shrink: 0;
 }
 
 .opening-hours p {
@@ -2229,36 +2242,92 @@ body {
 
     .footer-content {
         grid-template-columns: 1fr;
-        gap: 30px;
-        text-align: center;
+        gap: 35px;
+        text-align: left;
     }
 
     .footer-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: left;
+        width: 100%;
     }
 
-    .footer-section ul,
-    .opening-hours {
-        text-align: center;
+    .footer-section h3,
+    .footer-section h4 {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .footer-section ul {
+        text-align: left;
+        width: 100%;
     }
     
     .contact-info {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        text-align: left;
+        width: 100%;
     }
     
     .contact-info p {
-        margin-bottom: 10px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 8px;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-bottom: 12px;
         word-break: break-word;
-        flex-wrap: wrap;
+        text-align: left;
+        flex-wrap: nowrap;
+    }
+
+    .contact-info p i {
+        color: #2563eb;
+        min-width: 18px;
+        flex-shrink: 0;
+    }
+    
+    .opening-hours {
+        text-align: left;
+        width: 100%;
+    }
+
+    .opening-hours p {
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    .contact-info p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+    
+    .footer-section {
+        text-align: left;
+    }
+    
+    .contact-info p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
     }
 }
 
@@ -2277,6 +2346,33 @@ body {
 
     .faq-item.active .faq-answer {
         padding: 0 20px 20px 20px;
+    }
+
+    .footer-content {
+        gap: 25px;
+        text-align: left;
+    }
+
+    .footer-section h3,
+    .footer-section h4 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .opening-hours p {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+    .social-links a {
+        width: 35px;
+        height: 35px;
     }
 }
 
