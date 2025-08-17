@@ -130,16 +130,12 @@ body {
 
 /* Hero szekció */
 .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url('hatter.png');
-    background-size: 120% auto;
+    background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    min-height: 100vh;
+    animation: none;
     position: relative;
     overflow: hidden;
-    animation: heroBackground 20s ease-in-out infinite alternate;
 }
 
 @keyframes heroBackground {
@@ -2263,12 +2259,12 @@ body {
         text-align: left;
         width: 100%;
     }
-    
+
     .contact-info {
         text-align: left;
         width: 100%;
     }
-    
+
     .contact-info p {
         display: flex;
         align-items: center;
@@ -2285,7 +2281,7 @@ body {
         min-width: 18px;
         flex-shrink: 0;
     }
-    
+
     .opening-hours {
         text-align: left;
         width: 100%;
@@ -2306,7 +2302,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
-    
+
     .contact-info p {
         display: flex;
         align-items: center;
@@ -2320,11 +2316,11 @@ body {
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
     }
-    
+
     .footer-section {
         text-align: left;
     }
-    
+
     .contact-info p {
         display: flex;
         align-items: center;
@@ -2503,6 +2499,12 @@ body {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        background-position: center center;
+        background-size: 150% auto;
+        min-height: 100vh;
+    }
+
     .nav-logo img {
         width: 80px;
         height: 80px;
