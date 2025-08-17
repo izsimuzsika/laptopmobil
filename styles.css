@@ -133,26 +133,21 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url('hatter.png');
+    background: url('hatter.png') no-repeat center center;
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
     overflow: hidden;
 }
 
-@keyframes heroBackground {
-    0% { background-size: 120% auto; }
-    100% { background-size: 110% auto; }
-}
-
-.hero-overlay {
+.hero::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -2501,11 +2496,32 @@ body {
     }
 }
 
+/* Mobil optimalizálás */
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .hero-content {
+        padding: 120px 20px 50px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 480px) {
     .hero {
+        background-size: cover;
         background-position: center center;
-        background-size: 180% auto;
-        min-height: 100vh;
+        background-attachment: scroll;
     }
 
     .nav-logo img {
@@ -2516,9 +2532,13 @@ body {
     .hero-title {
         font-size: 2rem;
     }
-
+    
     .hero-subtitle {
         font-size: 1rem;
+    }
+
+    .hero-content {
+        padding: 100px 20px 50px;
     }
 
     .intro h2,
@@ -2531,9 +2551,8 @@ body {
 
 @media (max-width: 360px) {
     .hero {
+        background-size: cover;
         background-position: center center;
-        background-size: 200% auto;
-        min-height: 100vh;
     }
 
     .nav-logo img {
@@ -2548,15 +2567,13 @@ body {
     .hero-subtitle {
         font-size: 0.95rem;
     }
+    
+    .hero-content {
+        padding: 100px 15px 50px;
+    }
 }
 
 @media (max-width: 320px) {
-    .hero {
-        background-position: center center;
-        background-size: 250% auto;
-        min-height: 100vh;
-    }
-
     .nav-logo img {
         width: 60px;
         height: 60px;
@@ -2571,31 +2588,6 @@ body {
     }
 
     .hero-content {
-        padding: 100px 15px 50px;
-    }
-}
-
-@media (max-width: 280px) {
-    .hero {
-        background-position: center center;
-        background-size: 280% auto;
-        min-height: 100vh;
-    }
-
-    .nav-logo img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .hero-title {
-        font-size: 1.4rem;
-    }
-
-    .hero-subtitle {
-        font-size: 0.85rem;
-    }
-
-    .hero-content {
-        padding: 90px 10px 40px;
+        padding: 90px 15px 40px;
     }
 }
