@@ -81,29 +81,28 @@
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <div class="logo">
-                <img src="logo.svg" alt="Okossarok Logo" loading="lazy">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><img src="logo.svg" alt="Okossarok Logo"></a>
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Főoldal</a></li>
-                    <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
-                    <li><a href="arlista.html">Árlista</a></li>
-                    <li><a href="rolunk.html">Rólunk</a></li>
-                    <li><a href="gyik.html">GYIK</a></li>
-                    <li><a href="kapcsolat.html">Kapcsolat</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <a href="tel:+36703269148" class="btn btn-phone"><i class="fas fa-phone"></i> +36 70 326 9148</a>
-                <button class="menu-toggle" aria-label="Menü toggolása">
-                    <i class="fas fa-bars"></i>
-                </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active">Főoldal</a></li>
+                <li><a href="kapcsolat.html" class="nav-link webshop">🛒 Webshop</a></li>
+                <li><a href="szolgaltatasok.html" class="nav-link">Szolgáltatások</a></li>
+                <li><a href="arlista.html" class="nav-link">Árlista</a></li>
+                <li><a href="rolunk.html" class="nav-link">Rólunk</a></li>
+                <li><a href="gyik.html" class="nav-link">GYIK</a></li>
+                <li><a href="kapcsolat.html" class="nav-link">Kapcsolat</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
