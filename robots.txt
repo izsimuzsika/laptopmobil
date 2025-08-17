@@ -1,0 +1,12 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://okossarok.hu/sitemap.xml
+
+# Blokkolás a nem releváns fájloknak
+Disallow: /script.js
+Disallow: /styles.css
+Disallow: /*.png$
+Disallow: /*.jpg$
+Disallow: /*.svg$
