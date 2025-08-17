@@ -130,10 +130,13 @@ body {
 
 /* Hero szekció */
 .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url('hatter.png');
     background-size: cover;
     background-position: center center;
-    min-height: 100vh;
-    animation: none;
+    background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
 }
