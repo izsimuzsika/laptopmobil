@@ -2504,7 +2504,7 @@ body {
 @media (max-width: 480px) {
     .hero {
         background-position: center center;
-        background-size: 150% auto;
+        background-size: 180% auto;
         min-height: 100vh;
     }
 
@@ -2526,5 +2526,51 @@ body {
     .why-choose-us h2,
     .contact-cta h2 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero {
+        background-position: center center;
+        background-size: 200% auto;
+        min-height: 100vh;
+    }
+
+    .nav-logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero {
+        background-position: center center;
+        background-size: 220% auto;
+        min-height: 100vh;
+    }
+
+    .nav-logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .hero-content {
+        padding: 100px 15px 50px;
     }
 }
