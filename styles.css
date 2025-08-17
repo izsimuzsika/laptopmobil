@@ -2553,7 +2553,7 @@ body {
 @media (max-width: 320px) {
     .hero {
         background-position: center center;
-        background-size: 220% auto;
+        background-size: 250% auto;
         min-height: 100vh;
     }
 
@@ -2572,5 +2572,30 @@ body {
 
     .hero-content {
         padding: 100px 15px 50px;
+    }
+}
+
+@media (max-width: 280px) {
+    .hero {
+        background-position: center center;
+        background-size: 280% auto;
+        min-height: 100vh;
+    }
+
+    .nav-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hero-title {
+        font-size: 1.4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .hero-content {
+        padding: 90px 10px 40px;
     }
 }
