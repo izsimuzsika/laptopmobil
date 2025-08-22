@@ -311,6 +311,15 @@ body {
     transform: translateY(-2px);
 }
 
+/* Active navigation link */
+.nav-link.active {
+    color: #2563eb;
+}
+
+.nav-link.active::before {
+    width: 100%;
+}
+
 /* Footer */
 .footer {
     background: #0f172a;
@@ -410,15 +419,6 @@ body {
     opacity: 0.7;
 }
 
-/* Active navigation link */
-.nav-link.active {
-    color: #2563eb;
-}
-
-.nav-link.active::before {
-    width: 100%;
-}
-
 /* Animációk */
 @keyframes fadeInUp {
     from {
@@ -484,24 +484,108 @@ body {
         text-align: left;
     }
 
+    .footer-section {
+        text-align: left;
+        width: 100%;
+    }
+
+    .footer-section h3,
+    .footer-section h4 {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .footer-section ul {
+        text-align: left;
+        width: 100%;
+    }
+
+    .contact-info {
+        text-align: left;
+        width: 100%;
+    }
+
+    .contact-info p {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-bottom: 12px;
+        word-break: break-word;
+        text-align: left;
+        flex-wrap: nowrap;
+    }
+
+    .contact-info p i {
+        color: #2563eb;
+        min-width: 18px;
+        flex-shrink: 0;
+    }
+
+    .opening-hours {
+        text-align: left;
+        width: 100%;
+    }
+
+    .opening-hours p {
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+
     .nav-logo img {
         width: 100px;
         height: 100px;
     }
 }
 
-@media (max-width: 480px) {
-    .nav-logo img {
-        width: 80px;
-        height: 80px;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
     }
 
-    .page-header h1 {
-        font-size: 1.8rem;
+    .contact-info p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+
+    .footer-section {
+        text-align: left;
+    }
+
+    .contact-info p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-question {
+        padding: 20px;
+    }
+
+    .faq-item.active .faq-answer {
+        padding: 0 20px 20px 20px;
     }
 
     .footer-content {
         gap: 25px;
+        text-align: left;
     }
 
     .footer-section h3,
@@ -524,6 +608,11 @@ body {
     .social-links a {
         width: 35px;
         height: 35px;
+    }
+
+    .nav-logo img {
+        width: 80px;
+        height: 80px;
     }
 }
 </style>
