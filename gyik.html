@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gyakran Ismételt Kérdések - Okossarok Laptop és Mobilszerviz</title>
-    <meta name="description" content="Válaszok a leggyakrabban feltett kérdésekre laptop és mobiltelefon javítással kapcsolatban. Garancia, árak, javítási idő.">
+    <title>GYIK - Gyakran Ismételt Kérdések - Okossarok</title>
+    <meta name="description" content="Gyakran ismételt kérdések laptop és mobiltelefon javításról. Minden tudnivaló a javításról, árakról és szolgáltatásokról.">
     <style>
 /* === Inlined from styles.css on 2025-08-18 12:35:48 === */
 /* Reset és alapvető beállítások */
@@ -138,618 +138,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Hero szekció */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url('hatter.png') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.hero-content {
-    max-width: none;
-    margin: 0;
-    padding: 100px 0 50px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    z-index: 2;
-    color: white;
-}
-
-.hero-text {
-    text-align: left;
-    max-width: 800px;
-    width: 100%;
-    padding-right: 20px;
-}
-
-.hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    animation: slideInUp 1s ease;
-}
-
-.hero-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    opacity: 0.9;
-    animation: slideInUp 1s ease 0.2s both;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: flex-start;
-    animation: slideInUp 1s ease 0.4s both;
-}
-
-/* Gombok */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.btn-primary {
-    background: #2563eb;
-    color: white;
-    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
-}
-
-.btn-primary:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6);
-}
-
-.btn-secondary {
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-}
-
-.btn-secondary:hover {
-    background: white;
-    color: #2563eb;
-    transform: translateY(-2px);
-}
-
-/* Webshop kiemelt szakasz */
-.webshop-highlight {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-    color: white;
-    text-align: center;
-}
-
-.webshop-highlight h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.webshop-highlight p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    opacity: 0.95;
-}
-
-.webshop-highlight .btn {
-    background: white;
-    color: #d97706;
-    font-weight: 700;
-    font-size: 1.1rem;
-    padding: 15px 40px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
-.webshop-highlight .btn:hover {
-    background: #f8fafc;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
-}
-
-/* Bemutatkozás szekció */
-.intro {
-    padding: 100px 0;
-    background: #f8fafc;
-}
-
-.intro-content {
-    text-align: center;
-}
-
-.intro h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #1e293b;
-}
-
-.intro p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto 50px;
-    color: #64748b;
-}
-
-.intro-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    margin-top: 50px;
-}
-
-.feature-item {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.feature-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.feature-item i {
-    font-size: 3rem;
-    color: #2563eb;
-    margin-bottom: 20px;
-}
-
-.feature-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #1e293b;
-}
-
-.feature-item p {
-    color: #64748b;
-    line-height: 1.6;
-}
-
-/* Clickable cart icon only */
-.cart-icon-link {
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease;
-}
-
-.cart-icon-link:hover {
-    transform: scale(1.1);
-}
-
-.cart-icon-link i {
-    font-size: 3rem;
-    color: #2563eb;
-    transition: all 0.3s ease;
-}
-
-.cart-icon-link:hover i {
-    color: #1d4ed8;
-}
-
-/* iPhone kijelzőüveg csere előnézet */
-.iphone-glass-preview {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-}
-
-.glass-preview-content {
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 50px;
-    align-items: center;
-}
-
-.glass-preview-text h2 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-}
-
-.glass-preview-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    opacity: 0.95;
-}
-
-.glass-preview-features {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin: 30px 0;
-}
-
-.glass-feature {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 12px;
-    border-radius: 8px;
-}
-
-.glass-feature i {
-    color: #fbbf24;
-    font-size: 1.1rem;
-}
-
-.glass-preview-image {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.glass-preview-image img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.glass-preview-image:hover img {
-    transform: scale(1.05);
-}
-
-/* Szolgáltatások előnézet */
-.quick-services {
-    padding: 100px 0;
-    background: white;
-}
-
-.quick-services h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 60px;
-    color: #1e293b;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-bottom: 50px;
-}
-
-.service-card {
-    background: #f8fafc;
-    padding: 40px 30px;
-    border-radius: 15px;
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.service-card:hover {
-    background: white;
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    border-color: #2563eb;
-}
-
-.service-icon {
-    width: 80px;
-    height: 80px;
-    background: #2563eb;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-    transition: all 0.3s ease;
-}
-
-.service-card:hover .service-icon {
-    transform: scale(1.1);
-}
-
-.service-icon i {
-    font-size: 2rem;
-    color: white;
-}
-
-.service-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #1e293b;
-}
-
-.service-card p {
-    color: #64748b;
-    line-height: 1.6;
-}
-
-/* Shop termékek carousel */
-.shop-carousel {
-    padding: 80px 0;
-    background: #f8fafc;
-    overflow: hidden;
-}
-
-.shop-carousel h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #1e293b;
-    margin-bottom: 60px;
-}
-
-.products-slider {
-    display: flex;
-    animation: slideProducts 30s linear infinite;
-    gap: 30px;
-}
-
-@keyframes slideProducts {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
-
-.product-card {
-    min-width: 250px;
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.product-image {
-    width: 100%;
-    height: 180px;
-    background: #f1f5f9;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: #64748b;
-}
-
-.product-card h3 {
-    font-size: 1.2rem;
-    color: #1e293b;
-    margin-bottom: 10px;
-}
-
-.product-price {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #2563eb;
-    margin-bottom: 15px;
-}
-
-.product-card .btn {
-    padding: 8px 20px;
-    font-size: 0.9rem;
-}
-
-/* Miért válassz minket */
-.why-choose-us {
-    padding: 100px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-}
-
-.why-choose-us h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 60px;
-}
-
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.feature-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 40px 30px;
-    border-radius: 15px;
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.feature-card:hover {
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-5px);
-}
-
-.feature-card i {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #fbbf24;
-}
-
-.feature-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-}
-
-.feature-card p {
-    opacity: 0.9;
-    line-height: 1.6;
-}
-
-/* Kapcsolat CTA */
-.contact-cta {
-    padding: 100px 0;
-    background: #1e293b;
-    color: white;
-    text-align: center;
-}
-
-.cta-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.cta-content p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    opacity: 0.9;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.contact-item i {
-    font-size: 1.2rem;
-    color: #2563eb;
-}
-
-/* Messenger floating button removed */
-
-/* Footer */
-.footer {
-    background: #0f172a;
-    color: white;
-    padding: 60px 0 20px;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    margin-bottom: 40px;
-    align-items: start;
-}
-
-.footer-section h3,
-.footer-section h4 {
-    margin-bottom: 20px;
-    color: #2563eb;
-}
-
-.footer-section p {
-    opacity: 0.9;
-    line-height: 1.6;
-}
-
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-    color: white;
-    text-decoration: none;
-    opacity: 0.9;
-    transition: all 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-    opacity: 1;
-    color: #2563eb;
-}
-
-.contact-info {
-    display: block;
-}
-
-.contact-info p {
-    margin-bottom: 12px;
-    word-break: break-word;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.contact-info p i {
-    color: #2563eb;
-    min-width: 16px;
-    flex-shrink: 0;
-}
-
-.opening-hours p {
-    margin-bottom: 8px;
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.social-links a {
-    width: 40px;
-    height: 40px;
-    background: #2563eb;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #334155;
-    opacity: 0.7;
-}
-
 /* Page Header */
 .page-header {
     padding: 120px 0 80px;
@@ -768,847 +156,6 @@ body {
     font-size: 1.2rem;
     opacity: 0.9;
     animation: fadeInUp 1s ease 0.2s both;
-}
-
-/* Services Detailed */
-.services-detailed {
-    padding: 80px 0;
-    background: #f8fafc;
-}
-
-.service-section {
-    margin-bottom: 80px;
-}
-
-.service-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.service-header h2 {
-    font-size: 2.5rem;
-    color: #1e293b;
-    margin-bottom: 15px;
-}
-
-.service-header h2 i {
-    color: #2563eb;
-    margin-right: 15px;
-}
-
-.detailed-service-card {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    height: 100%;
-}
-
-.detailed-service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.detailed-service-card .service-icon {
-    width: 60px;
-    height: 60px;
-    background: #2563eb;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.detailed-service-card .service-icon i {
-    font-size: 1.5rem;
-    color: white;
-}
-
-.detailed-service-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #1e293b;
-}
-
-.detailed-service-card p {
-    color: #64748b;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.detailed-service-card ul {
-    list-style: none;
-    padding: 0;
-}
-
-.detailed-service-card ul li {
-    color: #64748b;
-    margin-bottom: 8px;
-    position: relative;
-    padding-left: 20px;
-}
-
-.detailed-service-card ul li::before {
-    content: '✓';
-    color: #2563eb;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-}
-
-/* Featured Service */
-.featured-service {
-    background: white;
-    border-radius: 20px;
-    padding: 60px 40px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-.featured-content {
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 50px;
-    align-items: center;
-}
-
-.featured-text h3 {
-    font-size: 1.8rem;
-    color: #1e293b;
-    margin-bottom: 20px;
-}
-
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin: 30px 0;
-}
-
-.benefit-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    background: #f1f5f9;
-    border-radius: 8px;
-}
-
-.benefit-item i {
-    color: #2563eb;
-    font-size: 1.1rem;
-}
-
-.warning-box {
-    background: #fef3cd;
-    border: 1px solid #fbbf24;
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 30px;
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
-}
-
-.warning-box i {
-    color: #f59e0b;
-    font-size: 1.2rem;
-    margin-top: 2px;
-}
-
-.featured-image img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-/* Webshop Content */
-.webshop-content {
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 50px;
-    align-items: center;
-    background: white;
-    padding: 50px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.webshop-text h3 {
-    font-size: 1.8rem;
-    color: #1e293b;
-    margin-bottom: 20px;
-}
-
-.webshop-text ul {
-    list-style: none;
-    margin-bottom: 30px;
-}
-
-.webshop-text ul li {
-    color: #64748b;
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 20px;
-}
-
-.webshop-text ul li::before {
-    content: '✓';
-    color: #2563eb;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-}
-
-.webshop-image img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-/* Service CTA */
-.service-cta {
-    padding: 80px 0;
-    background: #1e293b;
-    color: white;
-    text-align: center;
-}
-
-.service-cta h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.service-cta p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    opacity: 0.9;
-}
-
-.cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-/* Active navigation link */
-.nav-link.active {
-    color: #2563eb;
-}
-
-.nav-link.active::before {
-    width: 100%;
-}
-
-/* Pricing Section */
-.pricing-section {
-    padding: 80px 0;
-    background: #f8fafc;
-}
-
-.pricing-category {
-    margin-bottom: 80px;
-}
-
-.category-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.category-header h2 {
-    font-size: 2.5rem;
-    color: #1e293b;
-    margin-bottom: 10px;
-}
-
-.category-header h2 i {
-    color: #2563eb;
-    margin-right: 15px;
-}
-
-.category-subtitle {
-    font-size: 1.2rem;
-    color: #2563eb;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.category-description {
-    max-width: 800px;
-    margin: 0 auto;
-    color: #64748b;
-    line-height: 1.6;
-}
-
-/* Pricing Tables */
-.pricing-table {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin-bottom: 40px;
-}
-
-.pricing-table table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.pricing-table th,
-.pricing-table td {
-    padding: 20px;
-    text-align: left;
-    border-bottom: 1px solid #e2e8f0;
-}
-
-.pricing-table th {
-    background: #2563eb;
-    color: white;
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-.pricing-table td {
-    color: #374151;
-}
-
-.pricing-table td:first-child {
-    font-weight: 500;
-}
-
-.pricing-table td:last-child {
-    text-align: right;
-    font-weight: 600;
-    color: #2563eb;
-    font-size: 1.1rem;
-}
-
-.pricing-table tr:hover {
-    background: #f8fafc;
-}
-
-.featured-row {
-    background: #fef3cd !important;
-}
-
-.featured-row:hover {
-    background: #fde68a !important;
-}
-
-.pricing-table i {
-    margin-right: 8px;
-    color: #2563eb;
-    width: 16px;
-}
-
-/* Featured Service Box */
-.featured-service-box {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 40px;
-    border-radius: 20px;
-    margin: 40px 0;
-}
-
-.featured-service-box .featured-icon {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.featured-service-box .featured-icon i {
-    font-size: 3rem;
-    color: #fbbf24;
-}
-
-.featured-service-box h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.featured-service-box p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    opacity: 0.9;
-    margin-bottom: 30px;
-}
-
-.benefits-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 15px;
-    margin-bottom: 30px;
-}
-
-.benefit {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-}
-
-.benefit i {
-    color: #fbbf24;
-    font-size: 1.1rem;
-    min-width: 20px;
-}
-
-.warning-note {
-    background: rgba(251, 191, 36, 0.2);
-    border: 1px solid #fbbf24;
-    border-radius: 10px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.warning-note i {
-    color: #fbbf24;
-    font-size: 1.2rem;
-}
-
-/* Info Notes */
-.info-note {
-    background: #e0f2fe;
-    border: 1px solid #0284c7;
-    border-radius: 10px;
-    padding: 15px;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.info-note i {
-    color: #0284c7;
-    font-size: 1.2rem;
-}
-
-.info-note span {
-    color: #0f172a;
-}
-
-/* Pricing Info */
-.pricing-info {
-    padding: 80px 0;
-    background: white;
-}
-
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.info-card {
-    text-align: center;
-    padding: 40px 20px;
-    background: #f8fafc;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-}
-
-.info-card:hover {
-    background: white;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    transform: translateY(-5px);
-}
-
-.info-card i {
-    font-size: 3rem;
-    color: #2563eb;
-    margin-bottom: 20px;
-}
-
-.info-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #1e293b;
-}
-
-.info-card p {
-    color: #64748b;
-    line-height: 1.6;
-}
-
-/* Pricing CTA */
-.pricing-cta {
-    padding: 80px 0;
-    background: #1e293b;
-    color: white;
-    text-align: center;
-}
-
-.pricing-cta h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.pricing-cta p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    opacity: 0.9;
-}
-
-/* Responsive Design for Pricing Tables */
-@media (max-width: 768px) {
-    .pricing-table {
-        overflow-x: auto;
-    }
-
-    .pricing-table table {
-        min-width: 600px;
-    }
-
-    .benefits-list {
-        grid-template-columns: 1fr;
-    }
-
-    .featured-content {
-        grid-template-columns: 1fr;
-    }
-
-    .webshop-content {
-        grid-template-columns: 1fr;
-    }
-
-    .featured-service-box {
-        padding: 30px 20px;
-    }
-
-    .glass-preview-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .glass-preview-features {
-        grid-template-columns: 1fr;
-    }
-
-    .messenger-float {
-        bottom: 20px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .messenger-float img {
-        width: 25px;
-        height: 25px;
-    }
-}
-
-/* About Page Styles */
-.about-main {
-    padding: 80px 0;
-    background: white;
-}
-
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 60px;
-    align-items: center;
-}
-
-.about-text h2 {
-    font-size: 2.5rem;
-    color: #1e293b;
-    margin-bottom: 30px;
-}
-
-.about-text p {
-    font-size: 1.1rem;
-    color: #64748b;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.about-image img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-}
-
-/* Stats Section */
-.stats-section {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    text-align: center;
-}
-
-.stats-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 60px;
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-}
-
-.stat-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 40px 20px;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-}
-
-.stat-card:hover {
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-5px);
-}
-
-.stat-icon {
-    margin-bottom: 20px;
-}
-
-.stat-icon i {
-    font-size: 3rem;
-    color: #fbbf24;
-}
-
-.stat-number {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.stat-label {
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
-
-/* Values Section */
-.values-section {
-    padding: 80px 0;
-    background: #f8fafc;
-}
-
-.values-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #1e293b;
-    margin-bottom: 60px;
-}
-
-.values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.value-card {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.value-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.value-icon {
-    width: 80px;
-    height: 80px;
-    background: #2563eb;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-}
-
-.value-icon i {
-    font-size: 2rem;
-    color: white;
-}
-
-.value-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #1e293b;
-}
-
-.value-card p {
-    color: #64748b;
-    line-height: 1.6;
-}
-
-/* Why Us Detailed */
-.why-us-detailed {
-    padding: 80px 0;
-    background: white;
-}
-
-.why-us-detailed h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #1e293b;
-    margin-bottom: 60px;
-}
-
-.reasons-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-}
-
-.reason-card {
-    background: #f8fafc;
-    padding: 30px;
-    border-radius: 15px;
-    border-left: 5px solid #2563eb;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.reason-card:hover {
-    background: white;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    transform: translateY(-5px);
-}
-
-.reason-number {
-    position: absolute;
-    top: -15px;
-    right: 20px;
-    background: #2563eb;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-
-.reason-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #1e293b;
-    padding-top: 10px;
-}
-
-.reason-card p {
-    color: #64748b;
-    line-height: 1.6;
-}
-
-/* Location Section */
-.location-section {
-    padding: 80px 0;
-    background: #f8fafc;
-}
-
-.location-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #1e293b;
-    margin-bottom: 60px;
-}
-
-.location-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: start;
-}
-
-.location-info h3 {
-    font-size: 1.8rem;
-    color: #1e293b;
-    margin-bottom: 30px;
-}
-
-.location-details {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
-
-.location-item {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
-    align-items: flex-start;
-}
-
-.location-item:last-child {
-    margin-bottom: 0;
-}
-
-.location-item i {
-    color: #2563eb;
-    font-size: 1.5rem;
-    margin-top: 5px;
-    min-width: 25px;
-}
-
-.location-item div {
-    flex: 1;
-}
-
-.location-item strong {
-    color: #1e293b;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.location-map {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.map-placeholder {
-    height: 400px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    padding: 40px;
-}
-
-.map-placeholder i {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    opacity: 0.8;
-}
-
-.map-placeholder p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.map-placeholder small {
-    opacity: 0.8;
 }
 
 /* FAQ Styles */
@@ -1718,532 +265,217 @@ body {
     opacity: 0.9;
 }
 
-/* Contact Page Styles */
-.contact-main {
-    padding: 80px 0;
-    background: #f8fafc;
-}
-
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-}
-
-.contact-info-section h2 {
-    font-size: 2.2rem;
-    color: #1e293b;
-    margin-bottom: 40px;
-}
-
-.contact-methods {
+.cta-buttons {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.contact-method {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    transition: all 0.3s ease;
-}
-
-.contact-method:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.method-icon {
-    width: 60px;
-    height: 60px;
-    background: #2563eb;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-}
-
-.method-icon i {
-    font-size: 1.5rem;
-    color: white;
-}
-
-.method-info h3 {
-    font-size: 1.3rem;
-    color: #1e293b;
-    margin-bottom: 10px;
-}
-
-.method-info p {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-}
-
-.method-info a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.method-info a:hover {
-    text-decoration: underline;
-}
-
-.method-info small {
-    color: #64748b;
-    line-height: 1.4;
-}
-
-.opening-schedule p {
-    margin-bottom: 5px;
-    color: #374151;
-}
-
-/* Contact Form */
-.contact-form-section h2 {
-    font-size: 2.2rem;
-    color: #1e293b;
-    margin-bottom: 30px;
-}
-
-.contact-form {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
-.form-group {
-    margin-bottom: 25px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: 600;
-    color: #374151;
-    margin-bottom: 8px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 12px 16px;
-    border: 2px solid #e5e7eb;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    background: white;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #2563eb;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-}
-
-.form-group input.error,
-.form-group select.error,
-.form-group textarea.error {
-    border-color: #ef4444;
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.checkbox-group {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-.checkbox-label {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    cursor: pointer;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 0;
-}
-
-.checkbox-label input[type="checkbox"] {
-    display: none;
-}
-
-.checkmark {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #d1d5db;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    flex-shrink: 0;
-    margin-top: 2px;
-}
-
-.checkbox-label input[type="checkbox"]:checked + .checkmark {
-    background: #2563eb;
-    border-color: #2563eb;
-}
-
-.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
-    content: '✓';
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.checkbox-label a {
-    color: #2563eb;
-    text-decoration: none;
-}
-
-.checkbox-label a:hover {
-    text-decoration: underline;
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    margin-top: 20px;
-}
-
-.form-info {
-    margin-top: 30px;
-    padding: 20px;
-    background: #f8fafc;
-    border-radius: 8px;
-    border-left: 4px solid #2563eb;
-}
-
-.info-item {
-    display: flex;
+/* Gombok */
+.btn {
+    display: inline-flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
-    color: #374151;
-    font-size: 0.95rem;
-}
-
-.info-item:last-child {
-    margin-bottom: 0;
-}
-
-.info-item i {
-    color: #2563eb;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
     font-size: 1rem;
-    width: 16px;
 }
 
-/* Map Section */
-.map-section {
-    padding: 80px 0;
+.btn-primary {
+    background: #2563eb;
+    color: white;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
     background: white;
+    color: #2563eb;
+    transform: translateY(-2px);
 }
 
-.map-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #1e293b;
-    margin-bottom: 60px;
+/* Active navigation link */
+.nav-link.active {
+    color: #2563eb;
 }
 
-.map-content {
+.nav-link.active::before {
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    background: #0f172a;
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
     display: grid;
-    grid-template-columns: 400px 1fr;
-    gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
     align-items: start;
 }
 
-.location-card {
-    background: #f8fafc;
-    padding: 40px 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.location-card h3 {
-    font-size: 1.5rem;
-    color: #1e293b;
-    margin-bottom: 15px;
-}
-
-.location-card h3 i {
-    color: #2563eb;
-    margin-right: 10px;
-}
-
-.location-card h4 {
-    font-size: 1.2rem;
-    color: #1e293b;
-    margin: 25px 0 10px 0;
-}
-
-.location-card h4 i {
-    color: #2563eb;
-    margin-right: 8px;
-}
-
-.location-card ul {
-    list-style: none;
-    margin-bottom: 25px;
-}
-
-.location-card ul li {
-    color: #64748b;
-    margin-bottom: 8px;
-    line-height: 1.6;
-}
-
-.landmark-info p {
-    color: #64748b;
-    line-height: 1.6;
-}
-
-.map-content-placeholder {
-    height: 400px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    padding: 40px;
-    border-radius: 15px;
-}
-
-.map-content-placeholder i {
-    font-size: 4rem;
+.footer-section h3,
+.footer-section h4 {
     margin-bottom: 20px;
-    opacity: 0.8;
+    color: #2563eb;
 }
 
-.map-content-placeholder h3 {
-    font-size: 1.5rem;
+.footer-section p {
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
     margin-bottom: 10px;
 }
 
-.map-content-placeholder p {
-    opacity: 0.9;
-    margin-bottom: 20px;
-}
-
-/* Messenger Contact */
-.messenger-contact {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #0084ff 0%, #0066cc 100%);
-}
-
-.messenger-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 40px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
-
-.messenger-icon {
-    width: 120px;
-    height: 120px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.messenger-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.messenger-content h3 {
-    font-size: 1.8rem;
-    color: #1e293b;
-    margin-bottom: 15px;
-}
-
-.messenger-content p {
-    color: #64748b;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.messenger-buttons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.messenger-buttons .btn {
-    padding: 12px 25px;
-    font-size: 1rem;
-}
-
-.messenger-buttons .btn-primary {
-    background: #0084ff;
+.footer-section ul li a {
     color: white;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: all 0.3s ease;
 }
 
-.messenger-buttons .btn-primary:hover {
-    background: #0066cc;
+.footer-section ul li a:hover {
+    opacity: 1;
+    color: #2563eb;
 }
 
-/* Emergency Contact */
-.emergency-contact {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+.contact-info {
+    display: block;
 }
 
-.emergency-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 40px;
-    border-radius: 20px;
+.contact-info p {
+    margin-bottom: 12px;
+    word-break: break-word;
     display: flex;
     align-items: center;
-    gap: 40px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    gap: 8px;
 }
 
-.emergency-icon {
-    width: 80px;
-    height: 80px;
-    background: #ef4444;
+.contact-info p i {
+    color: #2563eb;
+    min-width: 16px;
+    flex-shrink: 0;
+}
+
+.opening-hours p {
+    margin-bottom: 8px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: #2563eb;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-}
-
-.emergency-icon i {
-    font-size: 2rem;
     color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.emergency-content h3 {
-    font-size: 1.8rem;
-    color: #1e293b;
-    margin-bottom: 15px;
+.social-links a:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
 }
 
-.emergency-content p {
-    color: #64748b;
-    margin-bottom: 20px;
-    line-height: 1.6;
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #334155;
+    opacity: 0.7;
 }
 
-.emergency-buttons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+/* Animációk */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.emergency-buttons .btn {
-    padding: 12px 25px;
-    font-size: 1rem;
-}
-
-.emergency-buttons .btn-primary {
-    background: #dc2626;
-    color: white;
-}
-
-.emergency-buttons .btn-primary:hover {
-    background: #b91c1c;
-}
-
-.emergency-buttons .btn-secondary {
-    background: transparent;
-    color: #dc2626;
-    border-color: #ef4444;
-}
-
-.emergency-buttons .btn-secondary:hover {
-    background: #ef4444;
-    color: white;
-}
-
-.emergency-note {
-    color: #64748b;
-    font-size: 0.9rem;
-}
-
-/* Responsive Design for new pages */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .about-content,
-    .location-content,
-    .contact-content,
-    .map-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .values-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .reasons-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-
-    .emergency-card,
-    .messenger-card {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
         flex-direction: column;
+        background-color: white;
+        width: 100%;
         text-align: center;
-        gap: 20px;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
     }
 
-    .emergency-buttons,
-    .messenger-buttons {
-        flex-direction: column;
-        align-items: center;
+    .nav-menu.active {
+        left: 0;
     }
 
-    .messenger-icon {
-        width: 80px;
-        height: 80px;
+    .hamburger {
+        display: flex;
     }
 
-    .contact-form {
-        padding: 30px 20px;
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .faq-question {
+        padding: 20px;
+    }
+
+    .faq-item.active .faq-answer {
+        padding: 0 20px 20px 20px;
     }
 
     .footer-content {
@@ -2303,6 +535,11 @@ body {
     .social-links {
         justify-content: flex-start;
     }
+
+    .nav-logo img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -2338,14 +575,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .stat-number {
-        font-size: 2.5rem;
-    }
-
     .faq-question {
         padding: 20px;
     }
@@ -2380,252 +609,37 @@ body {
         width: 35px;
         height: 35px;
     }
-}
-
-/* Utility classes */
-.text-center {
-    text-align: center;
-}
-
-/* Animációk */
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Reszponzív dizájn */
-@media (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        padding: 20px 0;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active span:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
-    }
-
-    .hamburger.active span:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg);
-    }
-
-    .hero-content {
-        padding: 120px 20px 50px;
-    }
-
-    .hero-title {
-        font-size: 2.5rem;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .hero-text {
-        padding-right: 10px;
-        max-width: 100%;
-    }
-
-    .contact-info {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-logo img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-/* Mobil optimalizálás */
-@media (max-width: 768px) {
-    .hero {
-        background-attachment: scroll;
-        background-size: cover;
-        background-position: center center;
-    }
-    
-    .hero-content {
-        padding: 120px 20px 50px;
-    }
-    
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        background-size: cover;
-        background-position: center center;
-        background-attachment: scroll;
-    }
 
     .nav-logo img {
         width: 80px;
         height: 80px;
     }
-
-    .hero-title {
-        font-size: 2rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-
-    .hero-content {
-        padding: 100px 20px 50px;
-    }
-
-    .intro h2,
-    .quick-services h2,
-    .why-choose-us h2,
-    .contact-cta h2 {
-        font-size: 2rem;
-    }
 }
-
-@media (max-width: 360px) {
-    .hero {
-        background-size: cover;
-        background-position: center center;
-    }
-
-    .nav-logo img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .hero-title {
-        font-size: 1.8rem;
-    }
-
-    .hero-subtitle {
-        font-size: 0.95rem;
-    }
-    
-    .hero-content {
-        padding: 100px 15px 50px;
-    }
-}
-
-@media (max-width: 320px) {
-    .nav-logo img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .hero-title {
-        font-size: 1.6rem;
-    }
-
-    .hero-subtitle {
-        font-size: 0.9rem;
-    }
-
-    .hero-content {
-        padding: 90px 15px 40px;
-    }
-}
-
 </style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
+
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html"><img src="logo.svg" alt="Okossarok Logo"></a>
-            </div>
+            <a href="index.html" class="nav-logo">
+                <img src="logo.png" alt="Okossarok Logo">
+            </a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link">Főoldal</a></li>
-                <li><a href="kapcsolat.html" class="nav-link webshop">🛒 Webshop</a></li>
+                <li><a href="https://laptopmobilshop.hu" class="nav-link webshop">🛒 Webshop</a></li>
                 <li><a href="szolgaltatasok.html" class="nav-link">Szolgáltatások</a></li>
                 <li><a href="arlista.html" class="nav-link">Árlista</a></li>
                 <li><a href="rolunk.html" class="nav-link">Rólunk</a></li>
                 <li><a href="gyik.html" class="nav-link active">GYIK</a></li>
                 <li><a href="kapcsolat.html" class="nav-link">Kapcsolat</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger-menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -2634,96 +648,19 @@ body {
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <header class="page-header">
         <div class="container">
-            <h1>Gyakran Ismételt Kérdések</h1>
-            <p>Válaszok a leggyakrabban feltett kérdésekre</p>
+            <h1>Gyakran Ismételt Kérdések (GYIK)</h1>
+            <p>Találd meg a választ a leggyakoribb kérdéseidre laptop és mobiltelefon javítással kapcsolatban.</p>
         </div>
-    </section>
+    </header>
 
-    <!-- FAQ Section -->
     <section class="faq-section">
         <div class="container">
-            <!-- General FAQ -->
-            <div class="faq-category">
-                <h2><i class="fas fa-question-circle"></i> Általános kérdések</h2>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Mennyi idő alatt készül el a javítás?</h3>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>A javítási idő a hiba típusától és a szükséges alkatrészek elérhetőségétől függ. Egyszerű javítások (pl. szoftverfrissítés, vírusirtás) akár 1 órán belül elkészülhetnek. Hardveres javítások esetében általában 1-3 munkanap, de bonyolultabb esetekben ez ennél hosszabb is lehet. Minden esetben tájékoztatjuk az előre várható javítási időről.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Vállalnak garanciát a javításra?</h3>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Igen! Minden munkánkra és beépített alkatrészre garanciát vállalunk. A garancia ideje általában 6 hónap, de ez a javítás típusától függően változhat. A garanciális javítást ingyenesen végezzük el, amennyiben a hiba a mi munkánk miatt keletkezett.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Fizetni kell a diagnosztikáért?</h3>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Nem! A diagnosztika és az árajánlat készítés teljesen ingyenes. Csak akkor kell fizetni, ha elfogadod az árajánlatot és hozzájárulsz a javítás elvégzéséhez. Ha mégsem döntesz a javítás mellett, semmilyen költséged nem keletkezik.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Biztonságban vannak az adataim?</h3>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Természetesen! Az adatvédelem számunkra kiemelt fontosságú. Készülékeden tárolt személyes adatokhoz csak a javításhoz szükséges mértékben férünk hozzá. Minden munkatársunk titoktartási nyilatkozatot írt alá, és szigorú adatkezelési szabályokat követünk.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- Laptop FAQ -->
             <div class="faq-category">
                 <h2><i class="fas fa-laptop"></i> Laptop javítás</h2>
                 <div class="faq-list">
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>A laptop kijelzője csíkos/fekete. Mit tegyek?</h3>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Ez általában a kijelző kábelének vagy magának a panelnek a hibája. Első lépésként próbáld meg külső monitort csatlakoztatni a laptophoz. Ha azon rendben működik, akkor csak a kijelző sérült. Hozd be hozzánk diagnosztikára, hogy pontosan meghatározhassuk a hibát és elkészíthessük az árajánlatot.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>A laptop túlmelegszik és lassú. Mi lehet a probléma?</h3>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Ez gyakori probléma, ami általában a hűtési rendszer elszennyeződéséből adódik. A port és szösz felhalmozódik a hűtőbordákon és a ventillátoron, ami miatt a laptop nem tud megfelelően hűlni. A megoldás: teljes hűtés tisztítás, hőelvezető paszta cseréje. Ez jelentősen javítja a teljesítményt és csökkenti a zajt.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>A laptop akkumulátora gyorsan lemerül. Cserélni kell?</h3>
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Ha az akkumulátor kapacitása jelentősen csökkent (pl. régen 4-5 órát bírt, most csak 1 órát), akkor valószínűleg cserére szorul. Az akkumulátorok élettartama általában 2-3 év vagy 300-500 töltési ciklus. Diagnosztika során megmérjük az akkumulátor jelenlegi kapacitását és állapotát.</p>
-                        </div>
-                    </div>
-
                     <div class="faq-item">
                         <div class="faq-question">
                             <h3>A laptop nem kapcsol be. Mi lehet a baj?</h3>
@@ -2731,6 +668,46 @@ body {
                         </div>
                         <div class="faq-answer">
                             <p>Ez több okból is előfordulhat: tönkrement akkumulátor, törött töltő, alaplapi hiba, vagy RAM probléma. Első lépésként próbáld meg másik töltővel (ha van), és ellenőrizd, hogy a töltő LED-je világít-e. Ha ezekkel sem indul be, hozd be diagnosztikára - mi megtaláljuk a pontos okot.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Lassú a laptopom. Hogyan gyorsíthatom fel?</h3>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A lassulás oka lehet túl sok futó program, kevés szabad tárhely, elavult illesztőprogramok, vagy akár hardverprobléma is. Javasoljuk az indítópult tisztítását, felesleges programok eltávolítását, a merevlemez töredezettségmentesítését és víruskeresés futtatását. Ha ezek nem segítenek, érdemes lehet SSD-re váltani vagy több RAM-ot beszerelni.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>A laptop kijelzője csíkos vagy vibrál. Mi a teendő?</h3>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ez általában a kijelző saját hibája, vagy a kijelzőt a géppel összekötő kábel sérülése miatt fordul elő. Próbáld meg külső monitorhoz csatlakoztatni a laptopot. Ha külső monitoron a kép tiszta, akkor a kijelző vagy a kábel a hibás. Fontos lehet a kábel csatlakozójának ellenőrzése is.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Mennyibe kerül egy laptop akkumulátor cseréje?</h3>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Az akkumulátor csere ára függ a laptop típusától és az akkumulátor kapacitásától. Általánosságban 28.000 Ft-tól kezdődnek a cserék. Pontos árajánlatért hozd be a gépet, vagy add meg a pontos típusát, és mi utánajárunk.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Milyen garanciát vállalnak a laptop javításra?</h3>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Minden javításra 3-12 hónap garanciát vállalunk, a beépített alkatrésztől és a javítás jellegétől függően. Az alkatrészekre külön gyártói garancia is vonatkozhat. A pontos garanciaidőről minden javítás előtt tájékoztatunk.</p>
                         </div>
                     </div>
                 </div>
@@ -2888,9 +865,8 @@ body {
                 <div class="footer-section">
                     <h4>Nyitvatartás</h4>
                     <div class="opening-hours">
-                        <p>Hétfő-Péntek: 9:00-18:00</p>
-                        <p>Szombat: 9:00-14:00</p>
-                        <p>Vasárnap: Zárva</p>
+                        <p>Hétfő-Péntek: 9:00-16:00</p>
+                        <p>Szombat-Vasárnap: Zárva</p>
                     </div>
                 </div>
             </div>
